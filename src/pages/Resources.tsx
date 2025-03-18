@@ -6,6 +6,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { BookOpen, Code, ExternalLink, Github, Heart, Package, Star } from "lucide-react";
 import ScrollToTop from "../components/ScrollToTop";
+import { motion } from "framer-motion";
 
 const resources = {
   uiLibraries: [
@@ -193,9 +194,14 @@ const ResourcesPage = () => {
           <div className="p-3 rounded-full bg-primary/10 mb-4">
             <BookOpen className="w-6 h-6 text-primary" />
           </div>
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 tracking-tight">
+          <motion.h2 
+            className="text-3xl md:text-4xl font-bold mb-4 tracking-tight animated-gradient-text"
+            initial={{ y: 20, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.5, delay: 0.1 }}
+          >
             Developer Resources
-          </h2>
+          </motion.h2>
           <p className="text-lg text-muted-foreground max-w-2xl">
             Curated collection of libraries, tools, and learning resources to accelerate your development workflow.
           </p>

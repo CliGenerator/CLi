@@ -285,7 +285,7 @@ const CommandDisplay = ({ command, framework, features }: CommandDisplayProps) =
           )}
         </p>
         
-        <div className="flex items-center justify-center gap-3">
+        {/* <div className="flex items-center justify-center gap-3">
           <Avatar className="h-10 w-10 rounded-full border border-border">
             <AvatarImage src="https://pbs.twimg.com/profile_images/1767217770876375040/xInW2nLo_400x400.jpg" alt="Founder" />
           </Avatar>
@@ -301,7 +301,7 @@ const CommandDisplay = ({ command, framework, features }: CommandDisplayProps) =
               @aadarshhx8
             </a>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

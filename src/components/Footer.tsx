@@ -21,7 +21,7 @@ const Footer = () => {
         
         <div className="flex items-center gap-4 mb-4 md:mb-0">
           <a 
-            href="https://discord.gg/developer-community" 
+            href="https://discord.gg/sfc4K74A" 
             target="_blank" 
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors"
@@ -31,7 +31,7 @@ const Footer = () => {
           </a>
           
           <a 
-            href="https://github.com/devsetup/cli" 
+            href="https://github.com/CliGenerator/CLi" 
             target="_blank" 
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors"

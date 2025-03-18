@@ -11,6 +11,7 @@ import { Framework, Feature } from "../utils/types";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import ScrollToTop from "../components/ScrollToTop";
+import { motion } from "framer-motion";
 
 const frameworks: Framework[] = ["react", "next", "vue", "nuxt", "svelte", "solid"];
 
@@ -50,9 +51,14 @@ const LearnPage = () => {
           <div className="p-3 rounded-full bg-primary/10 mb-4">
             <Lightbulb className="w-6 h-6 text-primary" />
           </div>
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 tracking-tight">
+          <motion.h2 
+            className="text-3xl md:text-4xl font-bold mb-4 tracking-tight animated-gradient-text"
+            initial={{ y: 20, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.5, delay: 0.1 }}
+          >
             Learning Resources
-          </h2>
+          </motion.h2>
           <p className="text-lg text-muted-foreground max-w-2xl">
             Comprehensive documentation and learning materials for your favorite frameworks and tools
           </p>

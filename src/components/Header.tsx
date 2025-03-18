@@ -17,7 +17,7 @@ const Header = () => {
   const isMobile = useIsMobile();
 
   useEffect(() => {
-    fetch("https://api.github.com/repos/shadcn/ui")
+    fetch("https://api.github.com/repos/CliGenerator/CLi")
       .then(response => response.json())
       .then(data => {
         if (data.stargazers_count) {
@@ -33,7 +33,7 @@ const Header = () => {
         <div className="flex items-center">
           <Link to="/" className="flex items-center mr-4 gap-2">
             <Terminal className="h-5 w-5 text-primary" />
-            <span className="font-semibold">DevSetup CLI</span>
+            <span className="font-semibold">CLIGenerator</span>
           </Link>
         </div>
         
@@ -47,7 +47,7 @@ const Header = () => {
           {!isMobile && (
             <>
               <a 
-                href="https://github.com/shadcn/ui" 
+                href="https://github.com/CliGenerator/CLi" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors"
