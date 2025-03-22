@@ -89,7 +89,7 @@ const Header = () => {
           <Navigation />
           <div className="mt-4 pt-4 border-t border-border/40 space-y-4">
             <a 
-              href="https://github.com/shadcn/ui" 
+              href="https://github.com/CliGenerator/CLi" 
               target="_blank" 
               rel="noopener noreferrer"
               className="flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors"
